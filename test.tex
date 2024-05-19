@@ -21,21 +21,21 @@
 
 % Configure listings package
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
+    backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
     keywordstyle=\color{magenta},
     numberstyle=\tiny\color{codegray},
     stringstyle=\color{codepurple},
     basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
     showstringspaces=false,
-    showtabs=false,                  
+    showtabs=false,
     tabsize=2
 }
 \lstset{style=mystyle}
@@ -65,7 +65,7 @@
 {â}{{\^{a}}}1
 {Â}{{\^{A}}}1
 {Î}{{\^{I}}}1
-} 
+}
 % Additional settings for microtype and document formatting
 \tolerance=2000
 \emergencystretch=10pt
@@ -158,10 +158,10 @@ Les équations transcendantes impliquent des fonctions transcendantes comme les 
 \subsection{Systèmes d'équations non linéaires}
 Les systèmes d'équations non linéaires impliquent plusieurs équations non linéaires simultanées. Par exemple, le système d'équations
 \[
-\begin{cases} 
-x^2 + y^2 = 1 \\ 
-x^2 - y = 0 
-\end{cases} 
+\begin{cases}
+x^2 + y^2 = 1 \\
+x^2 - y = 0
+\end{cases}
 \]
 a pour solutions $(x, y) = (1, 0)$ et $(x, y) = (-1, 0)$.
 
@@ -222,7 +222,7 @@ L'algorithme de la méthode de Newton est une procédure itérative utilisée po
     \item \textbf{Répétition} : Si les conditions de convergence ne sont pas satisfaites et que le nombre maximal d'itérations n'est pas atteint, retournez à l'étape 2 et continuez le processus avec la nouvelle approximation \(x_{n+1}\).
 \end{enumerate}
 
-Ce processus itératif constitue l'essence de l'algorithme de la méthode de Newton, permettant d'approcher efficacement les solutions des équations non linéaires. 
+Ce processus itératif constitue l'essence de l'algorithme de la méthode de Newton, permettant d'approcher efficacement les solutions des équations non linéaires.
 
 \subsection{Interprétation géométrique}
 
@@ -498,7 +498,7 @@ function [root, converged] = newtonRaphson(f, f1, x0, epsilon, maxIter)
 
     for n = 1:maxIter
         x_new = x - (f(x) / f1(x));  // Appliquer la formule de Newton-Raphson
-        disp("Itération " + string(n) + ": x = " + string(x_new));  
+        disp("Itération " + string(n) + ": x = " + string(x_new));
                                     // Afficher la valeur actuelle de x
 
         // Vérifier la convergence
