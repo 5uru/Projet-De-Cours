@@ -132,7 +132,7 @@ L'ensemble des singularités de $f$ est appelé l'ensemble polaire de $f$.
 \end{itemize}
 
 \textbf{Exemple:} \\
-La fonction 
+La fonction
 \[
 f(z) = \frac{g(z)}{(z - z_1)^{k_1}(z - z_2)^{k_2} \cdots (z - z_n)^{k_n}}
 \]
@@ -148,7 +148,7 @@ Un sous-groupe additif $\Omega \subset \mathbb{C}$ est un réseau si :
 \end{enumerate}
 
 \subsection{Périodicités de fonctions Méromorphes }
-\textbf{Définition 1.1} \quad Une fonction méromorphe \( f: \mathbb{C} \to \mathbb{C} \) est dite \textit{périodique de période} \( \tau \in \mathbb{C}^* \) si pour tout \( z \) dans \( \mathbb{C} \): 
+\textbf{Définition 1.1} \quad Une fonction méromorphe \( f: \mathbb{C} \to \mathbb{C} \) est dite \textit{périodique de période} \( \tau \in \mathbb{C}^* \) si pour tout \( z \) dans \( \mathbb{C} \):
 \[ z + \tau \in \Omega \quad \text{et} \quad f(z + \tau) = f(z) \]
 
 
@@ -190,7 +190,7 @@ Nous appellerons de telles périodes \( \tau_1 \) et \( \tau_2 \) des périodes 
             \draw (\x,\y) -- (\x+1,\y); % horizontal lines
             \draw (\x,\y) -- (\x,\y+1); % vertical lines
         }
-        
+
         % Add the last set of lines to complete the grid
         \foreach \y in {0,1,2,3}
         {
@@ -200,21 +200,21 @@ Nous appellerons de telles périodes \( \tau_1 \) et \( \tau_2 \) des périodes 
         {
             \draw (\x,4) -- (\x+1,4);
         }
-        
+
         % Labels and specific vectors
         \draw[thick, red, ->] (3,2) -- node[below] {$\tau_1$} (4,2);
         \draw[thick, red, ->] (3,2) -- node[left] {$\tau_2$} (3,3);
     \end{tikzpicture}
     \caption{Illustration du 3ème cas}
     \end{figure}
-    
-    
+
+
 \begin{lemma}[1.6]
 Soit \( f \) une fonction périodique non constante, l'ensemble \( \Lambda_f \) ne contient pas de point d'accumulation, c'est un ensemble discret de \( \mathbb{C} \).
 \end{lemma}
 
 \textbf{Démonstration.}
-On démontre ce lemme par l'absurde. Posons \( \alpha \in \Lambda_f \) un point d'accumulation et soit \( P \) l'ensemble des pôles de \( f \). Il existe une suite \( (\tau_n) \) de \( \Lambda_f \) telle que \( (\tau_n) \) converge vers \( \alpha \) tel que pour tout \( i \neq j \), \( \tau_i \neq \tau_j \). Soit \( z_0 \in \mathbb{C}\setminus P \), \( z_0 + \alpha \in \mathbb{C}\setminus P \) car \( \alpha \in \Lambda_f \), par continuité de la fonction \( f \) et périodicité : 
+On démontre ce lemme par l'absurde. Posons \( \alpha \in \Lambda_f \) un point d'accumulation et soit \( P \) l'ensemble des pôles de \( f \). Il existe une suite \( (\tau_n) \) de \( \Lambda_f \) telle que \( (\tau_n) \) converge vers \( \alpha \) tel que pour tout \( i \neq j \), \( \tau_i \neq \tau_j \). Soit \( z_0 \in \mathbb{C}\setminus P \), \( z_0 + \alpha \in \mathbb{C}\setminus P \) car \( \alpha \in \Lambda_f \), par continuité de la fonction \( f \) et périodicité :
 \[
 f(z_0 + \alpha) = \lim_{n \to \infty} f(z_0 + \tau_n) = f(z_0)
 \]
@@ -250,7 +250,7 @@ Alors \( \lambda \in \mathbb{R}\setminus\mathbb{Z} \), car \( \tau_2 \in \Lambda
     Alors \( \lambda \in \mathbb{R} \setminus \mathbb{Z} \), car \( \tau_2 \in \Lambda_f \setminus B \) et de plus  \[
         \tau_2 - \lfloor \lambda \rfloor \tau_1 = (\lambda - \lfloor \lambda \rfloor) \tau_1 \in \Lambda_f, \quad \text{avec} \quad \lambda - \lfloor \lambda \rfloor \in ]0; 1[
         \],ce qui est impossible d'après la définition de \( \tau_1 \).
-    
+
     \item Montrons maintenant que toute période \( \tau \) de \( \Lambda_f \) peut s'écrire de manière unique sous la forme
     \[
     \tau = n\tau_1 + m\tau_2, \quad n, m \in \mathbb{Z}.
@@ -303,11 +303,11 @@ Dans le cas où $f$ est une fonction elliptique de périodes fondamentales $\ome
     \coordinate (A) at (2,0);
     \coordinate (B) at (1,2);
     \coordinate (C) at ($(A) + (B)$);
-    
+
     \draw[thick] (O) -- (A) -- (C) -- (B) -- cycle;
     \draw[dashed] (O) -- (B);
     \draw[dashed] (A) -- (C);
-    
+
     \node at (-0.2,-0.2) {$a$};
     \node at (2.2,-0.2) {$a +\omega_1$};
     \node at (1,2.2) {$a +\omega_2$};
@@ -387,7 +387,7 @@ Ainsi, d'après le lemme 2.4, tout nombre complexe $z$ peut s'écrire sous la fo
 \[
 z = z' + n \omega_1 + m \omega_2 \quad \text{avec} \quad z' \in \mathcal{P}(\omega_1, \omega_2), \quad n, m \in \mathbb{Z}
 \]
-On en déduit donc 
+On en déduit donc
 \[
 \sup_{z \in \mathbb{C}} |f(z)| = \sup_{z' \in \mathcal{P}(\omega_1, \omega_2)} |f(z')| < +\infty
 \]
@@ -416,7 +416,7 @@ ce qui est un pôle d'ordre $p$ de $f$.
 
 Si $z$ est un zéro d'ordre $p$. Remarquons que si $f$ est elliptique, $\frac{1}{f}$ est aussi elliptique ($\mathbb{C}$ est connexe donc $\mathcal{M}(\mathbb{C})$ est un corps, $\frac{1}{f}$ est donc méromorphe), ainsi on a :
 
-$z$ est un zéro d'ordre $p$ de $f \iff \zeta$ est un pôle d'ordre $p$ de $\frac{1}{f}$ 
+$z$ est un zéro d'ordre $p$ de $f \iff \zeta$ est un pôle d'ordre $p$ de $\frac{1}{f}$
 \[
 \iff \zeta \text{ est un pôle d'ordre } p \text{ de } \frac{1}{f}
 \]
@@ -447,11 +447,11 @@ D'après le \textbf{Théorème 2.7} et le \textbf{lemme 2.4}, $A$ et $B$ sont no
 j: A \rightarrow B
 \]
 \[
-z \mapsto \zeta  
+z \mapsto \zeta
 \]
 \[
     \text{avec} \quad z \mapsto \zeta + n\omega'_1 + m\omega'_2, \quad \zeta \in B \quad \text{et} \quad n,m \in \mathbb{Z}.
-    \]  
+    \]
 Cette fonction est bien définie par unicité de la décomposition de $z$ démontré dans le \textbf{lemme 2.4}. Il suffirait alors de montrer que $j$ est bijective pour obtenir le résultat voulu.
 
 Soit \( z_1, z_2 \in A \) tel que \( j(z_1) = j(z_2) \). Alors, \( z_1 - z_2 \in \Lambda_f \) et il existe, puisque \( (\omega_1, \omega_2) \) est une paire de période fondamentale et de ce fait forme une base de \( \mathbb{C} \) en tant que \( \mathbb{R} \) espace vectoriel, deux scalaires \( r \) et \( s \) tels que :
@@ -516,7 +516,7 @@ En supposant le bord \( P_a(\tau_1, \tau_2) \) orienté positivement, on a d'apr
 
 Ainsi :
 \[
-\int_{\partial P(\tau_1,\tau_2)} f(z) \, dz = \int_{\gamma_1} f(z) \, dz + \int_{\gamma_2} f(z) \, dz + \int_{\gamma_3} f(z) \, dz + \int_{\gamma_4} f(z) \, dz 
+\int_{\partial P(\tau_1,\tau_2)} f(z) \, dz = \int_{\gamma_1} f(z) \, dz + \int_{\gamma_2} f(z) \, dz + \int_{\gamma_3} f(z) \, dz + \int_{\gamma_4} f(z) \, dz
 \]
 \[
 = \tau_1 \int_0^1 f(\tau_1 t) \, dt + \tau_2 \int_0^1 f(\tau_1 + \tau_2 t) \, dt - \tau_1 \int_0^1 f(\tau_2 + \tau_1 t) \, dt - \tau_2 \int_0^1 f(\tau_2 t) \, dt
@@ -529,7 +529,7 @@ Ainsi :
 \]
 Supposons désormais qu'au moins un des pôles \( b_j \) se trouve sur le bord de \( P(\tau_1, \tau_2) \).
 
-Les pôles étant isolés, il existe \( \alpha \in \mathbb{C}^* \) tel que sur le bord du parallélogramme fondamental translaté 
+Les pôles étant isolés, il existe \( \alpha \in \mathbb{C}^* \) tel que sur le bord du parallélogramme fondamental translaté
 \[
 P_\alpha = \{ \zeta + \alpha, \zeta \in P(\tau_1, \tau_2)\}
 \]
@@ -539,7 +539,7 @@ En effet, soit \( S \) l'ensemble des pôles de \( f \), \( S \cap P_\alpha \) e
 \[
 \{\tilde{r}\tau_1 + s\tau_2, s \in [0, 1]\} \cap S = \emptyset
 \]
-De même, il existe \( \tilde{s} \in [0, 1] \) tel que 
+De même, il existe \( \tilde{s} \in [0, 1] \) tel que
 \[
 \{r\tau_1 + \tilde{s}\tau_2, r \in [0, 1]\} \cap S = \emptyset
 \]
@@ -583,7 +583,7 @@ Pour tout \( z \in \mathbb{C} \), \( \lambda \in \Lambda_f \) \( f: f(z + \lambd
 
 Ainsi en dérivant cette égalité on obtient : \( f'(z + \lambda) = f'(z) \)
 
-La dérivée d'une fonction méromorphe est aussi une fonction méromorphe, on en déduit alors que \( f' \) est une fonction 
+La dérivée d'une fonction méromorphe est aussi une fonction méromorphe, on en déduit alors que \( f' \) est une fonction
 elliptique \( \Lambda_f \)-périodique.
 
 \textbf{Démonstration du théorème.}
@@ -596,7 +596,7 @@ En supposant \( \partial P(\tau_1, \tau_2) \) orienté positivement, d'après le
 \]
 
 \[
-= \tau_1  \int_0^1 \frac{f'(\tau_1 t)}{f(\tau_1 t)} \, dt + \tau_2 \int_0^1 \frac{f'(\tau_1 + \tau_2 t)}{f(\tau_1 + \tau_2 t)} \, dt - \tau_1 \int_0^1 \frac{f'(\tau_2 + \tau_1 t)}{f(\tau_2 + \tau_1 t)} \, dt - \tau_2 \int_0^1 \frac{f'(\tau_2 t)}{f(\tau_2 t)} \, dt 
+= \tau_1  \int_0^1 \frac{f'(\tau_1 t)}{f(\tau_1 t)} \, dt + \tau_2 \int_0^1 \frac{f'(\tau_1 + \tau_2 t)}{f(\tau_1 + \tau_2 t)} \, dt - \tau_1 \int_0^1 \frac{f'(\tau_2 + \tau_1 t)}{f(\tau_2 + \tau_1 t)} \, dt - \tau_2 \int_0^1 \frac{f'(\tau_2 t)}{f(\tau_2 t)} \, dt
 \]
 \[
 = \tau_1  \int_0^1 \frac{f'(\tau_1 t)}{f(\tau_1 t)} \, dt + \tau_2\int_0^1 \frac{f'( \tau_2 t)}{f( \tau_2 t)} \, dt - \tau_1\int_0^1 \frac{f'( \tau_1 t)}{f( \tau_1 t)} \, dt - \tau_2\int_0^1 \frac{f'(\tau_2 t)}{f(\tau_2 t)} \, dt
@@ -730,25 +730,25 @@ Tous les $T_k$ sont symétriques par rapport à l'origine. Autrement dit,
     \begin{tikzpicture}[scale=1]
         % Grid lines
         \draw[step=1cm, gray, very thin] (-3.5,-3.5) grid (3.5,3.5);
-        
+
         % T_3
         \fill[red!10] (-3,-3) rectangle (3,3);
-        
+
         % T_2
         \fill[red!30] (-2,-2) rectangle (2,2);
-        
+
         % T_1
         \fill[red!50] (-1,-1) rectangle (1,1);
-        
+
         % Axes
         \draw[thick,->] (-3.5,0) -- (3.5,0) node[right] {$x$};
         \draw[thick,->] (0,-3.5) -- (0,3.5) node[above] {$y$};
-        
+
         % Labels
         \node at (0,0) [below right, fill=white] {$T_1$};
         \node at (1,1) [below right, fill=white] {$T_2$};
         \node at (2,2) [below right, fill=white] {$T_3$};
-        
+
         % Origin
         \fill[black] (0,0) circle (2pt) node[below left] {0};
     \end{tikzpicture}
@@ -835,7 +835,7 @@ Soit \(K\) un compact, il existe un nombre \(r > 0\) tel que \(K \subset B(0,r)\
 = \left| \frac{z(z - 2\sigma_{n,m})}{\sigma_{n,m}^2 (z - \sigma_{n,m})^2} \right|
 \]
 \[
-= \frac{|z| \left| 2 - \frac{z}{\sigma_{n,m}} \right|}{|\sigma_{n,m}|^3 \left| 1 - \frac{z}{\sigma_{n,m}} \right|^2} 
+= \frac{|z| \left| 2 - \frac{z}{\sigma_{n,m}} \right|}{|\sigma_{n,m}|^3 \left| 1 - \frac{z}{\sigma_{n,m}} \right|^2}
 \]
 \[
 < \frac{10r}{|\sigma_{n,m}|^3}
