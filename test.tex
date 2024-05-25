@@ -1,13 +1,9 @@
-\UseRawInputEncoding % Add this line at the beginning
-
 \documentclass{article}
-\usepackage[utf8]{inputenc} % Assurer l'encodage UTF-8
-\usepackage[T1]{fontenc}
-\usepackage[french]{babel}
-\usepackage{amsmath, amssymb}
 \usepackage{graphicx}
-\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{amsmath, amssymb}
 \usepackage{tikz}
+
 \usetikzlibrary{intersections, calc}
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
@@ -616,25 +612,9 @@ Cette application démontre l'efficacité de la méthode de Newton-Raphson pour 
 
 \subsection{Avantages de la méthode de Newton}
 
-Parmi les nombreuses techniques itératives utilisées pour trouver les racines d'une fonction, la méthode de Newton (ou méthode de Newton-Raphson) se distingue par plusieurs avantages notables :
 
-\begin{itemize}
-    \item \textbf{Rapidité de Convergence} : L'un des principaux avantages de la méthode de Newton est sa rapidité de convergence, en particulier lorsque la solution initiale est proche de la racine réelle. La méthode a une convergence quadratique, ce qui signifie que le nombre de chiffres corrects double à chaque itération.
-    \item \textbf{Simplicité et Facilité d'Implémentation} : La méthode de Newton est relativement simple à comprendre et à implémenter. Elle nécessite seulement le calcul de la dérivée de la fonction, ce qui est souvent plus facile que d'autres méthodes nécessitant plus de calculs complexes ou plus d'informations sur la fonction.
-    \item \textbf{Applicabilité Générale} : La méthode de Newton peut être appliquée à une large gamme de problèmes dans divers domaines comme la physique, l'ingénierie, l'économie, etc. Elle est particulièrement utile dans les problèmes d'optimisation et de recherche de zéros de fonctions non linéaires.
-    \item \textbf{Flexibilité} : La méthode peut être adaptée pour résoudre des systèmes d'équations non linéaires, ce qui la rend très puissante et polyvalente pour diverses applications scientifiques et mathématiques.
-\end{itemize}
 
-\subsection{Inconvénients de la méthode de Newton}
 
-Malgré ses nombreux avantages, la méthode de Newton présente également certains inconvénients qui peuvent limiter son utilisation dans certaines situations :
 
-\begin{itemize}
-    \item \textbf{Dépendance à l'Initialisation} : La méthode de Newton dépend fortement de la valeur initiale choisie. Si cette valeur n'est pas suffisamment proche de la racine réelle, la méthode peut diverger ou converger vers une racine incorrecte.
-    \item \textbf{Calcul de la Dérivée} : Un autre inconvénient est la nécessité de calculer la dérivée de la fonction. Pour certaines fonctions complexes, ce calcul peut être difficile ou impossible. De plus, si la dérivée est très petite ou nulle, la méthode peut échouer ou donner des résultats imprécis.
-    \item \textbf{Convergence Locale} : La méthode de Newton n'est pas garantie de converger globalement. Elle peut converger localement vers des solutions non désirées ou des points de selle, en particulier dans des fonctions avec plusieurs racines ou des comportements complexes.
-    \item \textbf{Sensibilité aux Singularités} : La méthode de Newton peut être sensible aux singularités de la fonction, où la dérivée est nulle ou infinie. Dans ces cas, l'itération peut devenir instable et ne pas converger.
-    \item \textbf{Complexité pour Systèmes Non Linéaires} : Pour des systèmes d'équations non linéaires, bien que la méthode de Newton puisse être généralisée, le processus devient plus complexe et nécessite le calcul des dérivées partielles et de la matrice jacobienne, ce qui peut augmenter le coût computationnel et la difficulté d'implémentation.
-\end{itemize}
 
 \end{document}
